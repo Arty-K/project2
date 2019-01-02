@@ -19,11 +19,11 @@ class NavBar extends Component {
                            onClick={()=>this.props._whatPageClicked(key)}
 
                            >
-                           <Link className="nav-link hoverable" to={(`/${key}`)}>{key}</Link>
+                           <Link className="nav-link hoverable" to={(`/${key}#`)}>{key}</Link>
                        </li>
                    )}
                    <li className="nav-item" onClick={this.props._changeLanguage}>
-                       <a className="nav-link hoverable" href="/">{description}</a>
+                       <a className="nav-link hoverable">{description}</a>
                    </li>
                  </ul>
             </div>

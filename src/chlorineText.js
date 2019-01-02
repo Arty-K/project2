@@ -168,7 +168,7 @@ const chlorineText = {
             alt:'s10k'
         },
         img3: {
-            path:'/images/v10k.png',
+            path:'/images/v10k-2.png',
             alt:'v10k'
         },
         img4: {

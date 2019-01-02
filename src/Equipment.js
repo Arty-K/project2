@@ -9,7 +9,7 @@ class Equipment extends Component {
     state = {
         img1:"/images/2.png",
         img2:"/images/bersonslide.png",
-        img3:"/images/v10k.png",
+        img3:"/images/v10k-2.png",
         img4:"/images/gamma.png",
         text:[],
         textRU:'КАТАЛОГ ОБОРУДОВАНИЯ',
