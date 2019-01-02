@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #343a40;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",'Comfortaa',
+  sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+h4 {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-family: Comfortaa,sans-serif;
+    font-size: 28px;
+    color: #fff;
+}
+
+
+.navbar-nav {
+    font-family: Comfortaa,sans-serif;
+    font-size: 18px;
+}
+.icons {
+    height:100px;
+}
+
+.nav-item .nav-link:hover {
+    color: #39b4ff !important;
+}
+.fas {
+    padding-left: 10px;
+}
+.margin {
+    margin-bottom: 1rem;
+    margin-top:1rem;
+    padding-right: 20px;
+}
+
+.href, .href:hover   {
+    color: #fff;
+}
+hr {
+    background-color: #fff !important;
+}
+.footer {
+    border-top:1px solid lightgray;
+}
+.navbar {
+    border-bottom:1px solid lightgray;
+    border-left:1px solid lightgray;
+    border-right:1px solid lightgray;
+}
+
+.bord {
+    border-bottom: 1px solid lightgray;
+}
+
+.widt {
+    max-width:180px;
+}
+.height-min {
+    min-height: 400px;
+}
+.padding-mob {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.berson-img {
+    max-width: 280px;
+}
+.prominent-pump {
+    max-width: 300px;
+}
+a:hover {
+    text-underline: none !important;
+}
+.btn-outline-dark, .btn-outline-dark:hover {
+    color: #fff  !important;
+
+}
+.card-header {
+    border: 2px solid #212121 !important;
+    background-color: #343a40 !important;
+}
+.card-body {
+    background-color: #343a40 !important;
+}
+@media (max-width: 1230px) {
+    .p {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .padding-mob {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .height-min {
+        min-height: 230px;
+    }
+    .esline-img {
+        max-width: 400px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .p {
+        display: none;
+    }
+    .h3 {
+        font-size: 18px;
+        font-weight: 100;
+    }
+}
