@@ -25,6 +25,7 @@ class Header extends Component {
                     goToSite={this.props.goToSite}
                     _whatPageClicked={this.props._whatPageClicked}
                     _changeLanguage={this.props._changeLanguage}
+
                 />
             </nav>
 

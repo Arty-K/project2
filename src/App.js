@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import { BrowserRouter, Route} from 'react-router-dom';
-import langs from './langs';
+
 import MainPageContent from './MainPageContent';
 import Header from './Header';
 import Footer from './Footer';
@@ -12,9 +11,11 @@ import EslinePage from './EslinePage';
 import BersonPage from './BersonPage';
 import ClorinePage from './ChlorinePage';
 import ProminentPage from './ProminentPage';
-
-
 import Portfolio from './Portfolio';
+
+import langs from './langs';
+import './App.css';
+
 
 
 class App extends Component {
@@ -112,6 +113,7 @@ class App extends Component {
                             lang={this.state.lang}
                             _whatPageClicked={this._whatPageClicked}
                             _changeLanguage={this._changeLanguage}
+
                         />
 
                         <Route exact path="/" render={props=><MainPageContent lang={this.state.lang.name} {...props}/>} />
@@ -127,7 +129,7 @@ class App extends Component {
                         <Route path='/Обеззараживание ультрафиолетом' render={props=><BersonPage lang={this.state.lang.name} {...props}/>} />
                         <Route path='/Дозирование и обеззараживание хлор-газом' render={props=><ClorinePage lang={this.state.lang.name} {...props}/>} />
                         <Route path='/Продукция Prominent' render={props=><ProminentPage lang={this.state.lang.name} {...props}/>} />
-                        <Route component={MainPageContent} />
+                        
                     </div>
                 </BrowserRouter>
 

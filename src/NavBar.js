@@ -17,6 +17,7 @@ class NavBar extends Component {
                        <li className="nav-item"
                            key={key}
                            onClick={()=>this.props._whatPageClicked(key)}
+
                            >
                            <Link className="nav-link hoverable" to={(`/${key}`)}>{key}</Link>
                        </li>
