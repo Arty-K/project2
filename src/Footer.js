@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import Logo from './Logo';
 
-class Footer extends Component {
+
+export default class Footer extends Component {
+
     state = {
         text: [],
         textRU: 'Адрес: Украина, г. Кременчуг',
         textUA: 'Адреса: Україна, м. Кременчук'
     };
+
+    static propTypes = {
+        lang: PropTypes.string,
+        siteName: PropTypes.string,
+    }
+
     render() {
         const ru = this.state.textRU;
         const ua = this.state.textUA;
@@ -63,5 +73,3 @@ class Footer extends Component {
         );
     }
 }
-
-export default Footer;

@@ -1,7 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import LightboxPage from './LightboxPage';
 
-class Portfolio extends React.Component {
+
+export default class Portfolio extends React.Component {
+    
     state = {
         textRU:{
             title:'НАШИ РАБОТЫ',
@@ -10,6 +14,10 @@ class Portfolio extends React.Component {
             title:'НАШІ РОБОТИ',
         }
     };
+
+    static propTypes = {
+        lang: PropTypes.string
+    }
 
     render() {
         const ru = this.state.textRU;
@@ -31,6 +39,3 @@ class Portfolio extends React.Component {
         )
     }
 }
-
-
-export default Portfolio;

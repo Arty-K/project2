@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import prominentText from './prominentText';
 
-class ProminentPage extends Component {
+
+export default class ProminentPage extends Component {
+
+    static propTypes = {
+        lang: PropTypes.string
+    }
 
     render() {
         const ru = prominentText.textRU;
@@ -108,6 +115,4 @@ class ProminentPage extends Component {
         );
     }
 }
-
-export default ProminentPage;
 

@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import Slideshow from './Slideshow';
 import ParnterBlock from './PartnerBlock';
 import OurWorksBlock from './OurWorksBlock';
 
 class MainPageContent extends Component {
+
+    static propTypes = {
+        lang: PropTypes.string
+    }
 
     render() {
         return (

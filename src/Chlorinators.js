@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class Chlorinators extends Component {
+
+export default class Chlorinators extends Component {
+
+    static propTypes = {
+        ru: PropTypes.object,
+        ua: PropTypes.object,
+        img: PropTypes.string,
+        lang: PropTypes.string
+    }
+
     render(){
         const ru = this.props.ru;
         const ua = this.props.ua;
@@ -188,5 +198,3 @@ class Chlorinators extends Component {
         )
     }
 }
-
-export default Chlorinators;

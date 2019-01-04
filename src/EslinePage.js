@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import eslineText from './eslineText';
 
-class EslinePage extends Component {
-    state = {
 
-    };
+export default class EslinePage extends Component {
+
+    static propTypes = {
+        lang: PropTypes.string
+    }
 
     render() {
         const ru = eslineText.textRU;
@@ -100,6 +104,4 @@ class EslinePage extends Component {
         );
     }
 }
-
-export default EslinePage;
 

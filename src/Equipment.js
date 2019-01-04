@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import EsLine from './EsLine';
 import Berson from './Berson';
 import Clorine from './Clorine';
 import Prominent from './Prominent';
 
 
-class Equipment extends Component {
+export default class Equipment extends Component {
     state = {
         img1:"/images/2.png",
         img2:"/images/bersonslide.png",
@@ -15,6 +17,10 @@ class Equipment extends Component {
         textRU:'КАТАЛОГ ОБОРУДОВАНИЯ',
         textUA:'КАТАЛОГ ОБЛАДНАННЯ'
     };
+
+    static propTypes = {
+        lang: PropTypes.string,
+    }
 
     render() {
         const ru = this.state.textRU;
@@ -51,7 +57,5 @@ class Equipment extends Component {
         )
     }
 }
-
-export default Equipment;
 
 

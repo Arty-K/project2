@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
-class Prominent extends Component {
+export default class Prominent extends Component {
+
     state = {
         textRU:{
             title:'Продукция Prominent',
@@ -14,6 +17,11 @@ class Prominent extends Component {
             button:'Перехід до розділу'
         }
     };
+
+    static propTypes = {
+        lang: PropTypes.string,
+        img: PropTypes.string
+    }
 
     render() {
         const ru = this.state.textRU;
@@ -51,6 +59,4 @@ class Prominent extends Component {
         );
     }
 }
-
-export default Prominent;
 

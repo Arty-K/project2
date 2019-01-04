@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-class Berson extends Component {
+export default class Berson extends Component {
     state = {
         textRU:{
             title:'Обеззараживание ультрафиолетом',
@@ -14,6 +15,12 @@ class Berson extends Component {
             button:'Перехід до розділу'
         }
     };
+
+    static propTypes = {
+        lang:PropTypes.string,
+        img:PropTypes.string
+    };
+
     render() {
         const ru = this.state.textRU;
         const ua = this.state.textUA;
@@ -52,6 +59,3 @@ class Berson extends Component {
         );
     }
 }
-
-export default Berson;
-

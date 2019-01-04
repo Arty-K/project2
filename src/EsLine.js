@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+
 class EsLine extends Component {
+
     state = {
         textRU: {
             title:"Производство гипохлорита натрия",
@@ -14,6 +17,11 @@ class EsLine extends Component {
             button:"Перехід до розділу"
         }
     };
+
+    static propTypes = {
+        lang: PropTypes.string,
+        img: PropTypes.string
+    }
 
     render() {
         const ru = this.state.textRU;

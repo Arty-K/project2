@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class Evaporators extends Component {
+
+export default class Evaporators extends Component {
+
+    static propTypes = {
+        lang: PropTypes.string
+    }
+
     render(){
         const ru = this.props.ru;
         const ua = this.props.ua;
@@ -62,5 +69,3 @@ class Evaporators extends Component {
         )
     }
 }
-
-export default Evaporators;

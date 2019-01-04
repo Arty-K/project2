@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class BersonPage extends Component {
+export default class BersonPage extends Component {
     state = {
         textRU: {
             title:"Ультрафиолетовые установки Berson",
@@ -133,6 +133,3 @@ class BersonPage extends Component {
         );
     }
 }
-
-export default BersonPage;
-

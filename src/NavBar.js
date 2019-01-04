@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 
-class NavBar extends Component {
+export default class NavBar extends Component {
+
+    static propTypes = {
+        butt: PropTypes.array,
+        desc: PropTypes.string,
+        _whatPageClicked: PropTypes.func,
+        _changeLanguage: PropTypes.func
+    }
 
     render() {
     const buttons = this.props.lang.butt;
@@ -31,5 +39,3 @@ class NavBar extends Component {
         );
     }
 }
-
-export default NavBar;

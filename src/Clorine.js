@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-class Clorine extends Component {
+export default class Clorine extends Component {
     state = {
         textRU:{
             title:'Дозирование и обеззараживание хлор-газом',
@@ -14,6 +15,11 @@ class Clorine extends Component {
             button:'Перехід до розділу'
         }
     };
+
+    static propTypes = {
+        lang: PropTypes.string,
+    }
+
     render() {
         const ru = this.state.textRU;
         const ua = this.state.textUA;
@@ -54,6 +60,4 @@ class Clorine extends Component {
         );
     }
 }
-
-export default Clorine;
 

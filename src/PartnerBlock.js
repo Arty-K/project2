@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class PartnerBlock extends Component {
+
+export default class PartnerBlock extends Component {
+
+    static propTypes = {
+        lang: PropTypes.string
+    }
+
     render() {
         const name = this.props.lang,
               title = ['чп "арсенал-плюс"', 'пп "арсенал-плюс"'],
@@ -67,5 +74,3 @@ class PartnerBlock extends Component {
         );
     }
 }
-
-export default PartnerBlock;

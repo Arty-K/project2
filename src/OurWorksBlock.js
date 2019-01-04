@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-class OurWorksBlock extends Component {
+export default class OurWorksBlock extends Component {
+    
     state = {
         img1:"/images/works/img8.jpg",
         img2:"/images/works/img9.jpg",
@@ -13,7 +14,6 @@ class OurWorksBlock extends Component {
                 <div className="row py-4">
                 <div className="card-deck">
 
-
                     <div className="card mb-4">
                         <div className="view overlay">
                             <img className="card-img-top" src={this.state.img1} alt="1"/>
@@ -21,9 +21,6 @@ class OurWorksBlock extends Component {
                             </a>
                         </div>
                     </div>
-
-
-
 
                     <div className="card mb-4">
                         <div className="view overlay">
@@ -33,8 +30,6 @@ class OurWorksBlock extends Component {
                         </div>
                     </div>
 
-
-
                     <div className="card mb-4">
                         <div className="view overlay">
                             <img className="card-img-top" src={this.state.img3} alt="1"/>
@@ -43,15 +38,9 @@ class OurWorksBlock extends Component {
                         </div>
                     </div>
 
-
-
                 </div>
             </div>
             </div>
-
-
         );
     }
 }
-
-export default OurWorksBlock;

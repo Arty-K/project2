@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import chlorineText from './chlorineText';
+import PropTypes from 'prop-types';
 
+import chlorineText from './chlorineText';
 import Chlorinators from './Chlorinators';
 import Evaporators from './Evaporators';
 import Controllers from './Controllers';
 
-class ChlorinePage extends Component {
+export default class ChlorinePage extends Component {
+
+    static propTypes = {
+        lang: PropTypes.string,
+    }
 
     render() {
         const ru = chlorineText.textRU;
@@ -84,6 +89,4 @@ class ChlorinePage extends Component {
         );
     }
 }
-
-export default ChlorinePage;
 

@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import Logo from './Logo';
 import NavBar from './NavBar';
 
-class Header extends Component {
+
+export default class Header extends Component {
+
+    static propTypes = {
+        lang: PropTypes.object,
+        siteName: PropTypes.string,
+        goToSite: PropTypes.string,
+        _whatPageClicked: PropTypes.func,
+        _changeLanguage: PropTypes.func
+    }
+
     render() {
         return (
 
@@ -32,7 +44,5 @@ class Header extends Component {
         );
     }
 }
-
-export default Header;
 
 

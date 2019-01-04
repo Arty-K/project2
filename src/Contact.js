@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import MapContainer from './MapContainer';
 
-class Contact extends Component {
+export default class Contact extends Component {
     state = {
         textRU:{
             title:'КОНТАКТЫ',
@@ -16,6 +18,11 @@ class Contact extends Component {
             address:'Україна, Полтавська область, м. Кременчук, 39623, вул.Гвардійська 14а оф. 77'
         }
     };
+
+    static propTypes = {
+        lang: PropTypes.string,
+    }
+
     render() {
         const ru = this.state.textRU;
         const ua = this.state.textUA;
@@ -83,12 +90,7 @@ class Contact extends Component {
                     </div>
 
                 </div>
-
-
             </div>
         )
     }
 }
-
-
-export default Contact;

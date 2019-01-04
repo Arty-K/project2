@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class Logo extends Component {
+
+export default class Logo extends Component {
+
+    static propTypes = {
+        siteName: PropTypes.string
+    }
 
     render() {
         return (
@@ -8,6 +14,4 @@ class Logo extends Component {
         );
     }
 }
-
-export default Logo;
 
