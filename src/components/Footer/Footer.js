@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Logo from './Header/Logo';
 
-import Logo from './Logo';
+const footerText = {
+    textRU: 'Адрес: Украина, г. Кременчуг',
+    textUA: 'Адреса: Україна, м. Кременчук'
+};
 
 
 export default class Footer extends Component {
-
-    state = {
-        text: [],
-        textRU: 'Адрес: Украина, г. Кременчуг',
-        textUA: 'Адреса: Україна, м. Кременчук'
-    };
-
     static propTypes = {
         lang: PropTypes.string,
         siteName: PropTypes.string,
-    }
-
+    };
     render() {
-        const ru = this.state.textRU;
-        const ua = this.state.textUA;
+        const ru = footerText.textRU;
+        const ua = footerText.textUA;
         const whatLanguage = this.props.lang==='ru';
-
-
         return (
             <div>
                 <div className="row
