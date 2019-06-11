@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
-export default class Berson extends Component {
+export default class Prominent extends Component {
+
     state = {
         textRU:{
-            title:'Обеззараживание ультрафиолетом',
-            list:['Ультрафиолетовые установки Berson'],
-            button:"Перейти к разделу"
+            title:'Продукция Prominent',
+            list:['Дозирующие насосы','Контроллеры и анализаторы'],
+            button:'Перейти к разделу'
         },
         textUA:{
-            title:'Знезаражування ультрафіолетом',
-            list:['Ультрафіолетові установки Berson'],
+            title:'Продукція Prominent',
+            list:['Дозуючі насоси','Контролери и аналізатори'],
             button:'Перехід до розділу'
         }
     };
 
     static propTypes = {
-        lang:PropTypes.string,
-        img:PropTypes.string
-    };
+        lang: PropTypes.string,
+        img: PropTypes.string
+    }
 
     render() {
         const ru = this.state.textRU;
@@ -29,14 +31,13 @@ export default class Berson extends Component {
         return (
             <div className="row py-3 bord">
                 <div className="col-lg-6">
-                    <h4 className="text-left">{ whatLanguage ? ru.title: ua.title}</h4>
-                    {
-                        whatLanguage ?
-                            ru.list.map(key => <p  className="font-weight-light" key={key}>{key}</p>)
-                            :
-                            ua.list.map(key => <p  className="font-weight-light" key={key}>{key}</p>)
+                    <h4 className="text-left">{whatLanguage? ru.title: ua.title}</h4>
+                    {whatLanguage ?
+                        ru.list.map(key => <li  className="font-weight-light" key={key}>{key}</li>)
+                        :
+                        ua.list.map(key => <li  className="font-weight-light" key={key}>{key}</li>)
                     }
-                    <Link to='/Обеззараживание ультрафиолетом'>
+                    {/*<Link to='/Продукция Prominent'>*/}
                         <button
                             type="button"
                             className="btn
@@ -45,9 +46,8 @@ export default class Berson extends Component {
                                    btn-block">
                             { whatLanguage ? ru.button : ua.button}
                         </button>
-                    </Link>
-
-            </div>
+                    {/*</Link>*/}
+                </div>
 
                 <div className="col-lg-3 d-none d-lg-block">
                 </div>
@@ -59,3 +59,4 @@ export default class Berson extends Component {
         );
     }
 }
+

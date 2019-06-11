@@ -1,5 +1,5 @@
 import React from "react";
-import Lightbox from "react-image-lightbox";
+import Lightbox from "react-image-lightbox/index";
 import "./Lightbox.css";
 
 class LightboxPage extends React.Component {

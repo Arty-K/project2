@@ -34,7 +34,7 @@ export default class Clorine extends Component {
                     :
                     ua.list.map(key => <li  className="font-weight-light" key={key}>{key}</li>)
                 }
-                <Link to='/Дозирование и обеззараживание хлор-газом'>
+                {/*<Link to='/Дозирование и обеззараживание хлор-газом'>*/}
                     <button
                         type="button"
                         className="btn
@@ -45,7 +45,7 @@ export default class Clorine extends Component {
                     >
                         {whatLanguage ? ru.button : ua.button}
                     </button>
-                </Link>
+                {/*</Link>*/}
 
             </div>
 

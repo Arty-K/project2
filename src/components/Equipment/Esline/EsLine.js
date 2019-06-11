@@ -37,7 +37,7 @@ class EsLine extends Component {
                 <div className="col-lg-6">
                     <h4 className="text-left">{whatLanguage ? ru.title : ua.title}</h4>
                     <p className="font-weight-light">{whatLanguage ? ru.desc : ua.desc}</p>
-                    <Link to='/Производство гипохлорита натрия'>
+                    {/*<Link to='/Производство гипохлорита натрия'>*/}
                         <button
                              type="button"
                              className="btn
@@ -48,7 +48,7 @@ class EsLine extends Component {
                         >
                             {whatLanguage ? ru.button : ua.button}
                         </button>
-                    </Link>
+                    {/*</Link>*/}
                  </div>
 
                 <div className="col-lg-3 d-none d-lg-block"></div>

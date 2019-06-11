@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 
 
 export default class Chlorinators extends Component {
-
     static propTypes = {
         ru: PropTypes.object,
         ua: PropTypes.object,
         img: PropTypes.string,
         lang: PropTypes.string
-    }
-
+    };
     render(){
         const ru = this.props.ru;
         const ua = this.props.ua;
@@ -26,7 +24,8 @@ export default class Chlorinators extends Component {
                                     data-toggle="collapse"
                                     data-target="#collapseOne"
                                     aria-expanded="false"
-                                    aria-controls="collapseOne">
+                                    aria-controls="collapseOne"
+                            >
                                 {whatLanguage ? ru.s10k : ua.s10k}
                             </button>
                         </h5>

@@ -27,7 +27,13 @@ export default class EslinePage extends Component {
                 <div className="row font-weight-light text-justify">
                     <div className="col-xl-4 text-center">
                         <img className="card-img-top esline-img d-none d-xl-block" src={img.img1.path} alt={img.img1.alt}/>
-                        <button type="button" className="btn btn-secondary btn-md btn-block">{whatLanguage ? ru.button : ua.button}</button>
+                        <button
+                            type="button"
+                            id="download-catalog"
+                            className="btn btn-secondary btn-md btn-block"
+                        >
+                                {whatLanguage ? ru.button : ua.button}
+                            </button>
                     </div>
                     <div className="col-xl-8">
                         <h5>{whatLanguage ? ru.h5_1 : ua.h5_1}</h5>

@@ -14,7 +14,7 @@ import ProminentPage from './ProminentPage';
 import Portfolio from './Portfolio';
 
 import langs from './langs';
-import './App.css';
+import '../App.css';
 
 
 
